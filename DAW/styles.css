@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: 'Didot', serif;
+    background-color: #EFEFEF; /* Softer background color */
+    color: #2B2B2B; /* Slightly lighter dark text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #3D5A80; /* Calming blue background */
+    padding: 20px;
+    text-align: center;
+    color: #F2F2F2; /* Light text color */
+    border-bottom: 4px solid #EE6C4D; /* Warm accent color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo and header text */
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content .logo {
+    width: 90px; /* Scaled for balance */
+    height: auto;
+    margin-right: 15px;
+}
+
+.header-content h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #98C1D9; /* Softer, more vibrant light blue */
+    padding: 10px 0;
+}
+
+nav ul.nav-tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #3D5A80;
+}
+
+nav ul.nav-tabs li {
+    margin-right: 15px;
+}
+
+nav ul.nav-tabs li a {
+    color: #2B2B2B;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul.nav-tabs li a:hover {
+    background-color: #EE6C4D;
+    color: #F2F2F2;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #F0F7F4; /* Soft background for sections */
+    border: 1px solid #2B2B2B;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+h2, h3, h4 {
+    color: #3D5A80; /* Headings in dark blue */
+}
+
+/* Education Images */
+#education img {
+    width: 200px; /* Same width */
+    height: 150px; /* Ensures uniform height */
+    object-fit: cover; /* Crops the images to fit */
+    border: 2px solid #2B2B2B;
+    border-radius: 5px;
+}
+
+/* Collapsible Buttons */
+.collapsible-btn {
+    background-color: #3D5A80;
+    color: #F2F2F2;
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.collapsible-btn:hover {
+    background-color: #EE6C4D;
+}
+
+/* Items in Collapsible Content */
+.collapsible-content .item {
+    background-color: #E0FBFC; /* Light and calming background */
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.collapsible-content .item img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+/* Bottom Navigation Bar */
+.bottom-bar {
+    background-color: #2B2B2B;
+    color: #F2F2F2;
+    padding: 10px;
+    text-align: center;
+}
+
+.bottom-bar-btn {
+    color: #F2F2F2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.bottom-bar-btn:hover {
+    background-color: #EE6C4D;
+}
+
+/* Family Birthdays Table Styling */
+#family-birthdays table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #F0F7F4; /* Same soft background as sections */
+}
+
+#family-birthdays th, #family-birthdays td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #2B2B2B; /* Slight border for clean separation */
+}
+
+#family-birthdays th {
+    background-color: #3D5A80; /* Dark blue for header */
+    color: #F2F2F2;
+    font-weight: bold;
+}
+
+#family-birthdays td {
+    background-color: #E0FBFC; /* Lighter background for rows */
+    color: #2B2B2B;
+}
+
+#family-birthdays tr:nth-child(even) td {
+    background-color: #C1D3DE; /* Alternating row color */
+}
+
+#family-birthdays tr:hover td {
+    background-color: #98C1D9; /* Highlight on hover */
+}

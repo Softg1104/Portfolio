@@ -1,0 +1,138 @@
+/* Apply Didot font to the whole page */
+body {
+    font-family: Didot, serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('lemon.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+}
+
+
+header {
+    background-color: #F2D6A1; 
+    color: #003049;
+    text-align: center;
+    padding: 20px;
+    position: relative; 
+}
+
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px; 
+}
+
+.back-button a {
+    display: inline-block;
+    background-color: #F1A805;
+    color: #FDF0D5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    box-shadow: 0px 4px 8px #92ADA4;
+}
+
+.back-button a:hover {
+    background-color: #F2D6A1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #D4E0F0;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px #7CBBC0;
+    color: #543787;
+}
+
+
+section h2 {
+    margin-top: 0;
+    font-size: 1.5em; 
+    color: #543787;
+    display: flex; 
+    align-items: center;
+}
+
+
+.flag-icon {
+    width: 20px; 
+    height: auto;
+    margin-left: 10px; 
+    vertical-align: middle;
+}
+
+
+p {
+    font-size: 1em;
+    margin: 0 0 10px;
+}
+
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.medium-image {
+    width: 100%;
+    max-width: 45%; 
+    height: auto;
+    border: 2px solid #543787;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none; 
+    padding-left: 0;
+}
+
+
+ul li {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+
+hr {
+    border: none;
+    border-top: 2px solid #7CBBC0;
+    margin: 20px 0;
+}
+
+.home-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FEB737;
+    color: #FFEBAE;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px #7CBBC0;
+}
+
+.home-button a {
+    color: #543787;
+    text-decoration: none;
+}
+
+.home-button a:hover {
+    background-color: #543787; 
+    color: #FFEBAE; 
+}

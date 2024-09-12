@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Didot:wght@400;700&display=swap');
+
+
+body {
+    background-image: url('cherries.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    margin: 0;
+    font-family: 'Didot', serif;
+    color: #333;
+}
+
+header {
+    background: #290102; 
+    color: #FFFDEF;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Didot', serif; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #FFFDEF; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'Didot', serif; 
+}
+
+nav ul li a:hover {
+    color: #A7292F; 
+}
+
+main {
+    padding: 4em 2em;
+    margin-top: 60px; 
+}
+
+.section {
+    padding: 2em;
+    margin-bottom: 2em;
+   background: #FFFDEF;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Didot', serif; 
+}
+
+.profile-image {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.centered-name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    margin-top: 20px;
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centered-name h1 {
+    font-size: 4em;
+    margin: 0;
+    color: #100E11; 
+    animation: slideIn 1s ease-out;
+    font-family: 'Didot', serif;
+}
+.centered-name p {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    color: #666; 
+    font-family: 'Didot', serif; 
+}
+
+.name-logo {
+    margin-bottom: 1em; 
+}
+
+.name-logo img {
+    max-width: 80px; 
+    height: auto¡;
+    border-radius: 50%; 
+}
+
+.background-section {
+    background: linear-gradient(135deg, #A7292F, #CDC69A); 
+    color: #FFFDEF; 
+}
+
+.education-details h3 {
+    margin: 0;
+    color: #100E11; 
+    font-family: 'Didot', serif; 
+}
+
+.education-details p {
+    margin: 0;
+    color: #666; 
+    font-family: 'Didot', serif; 
+}
+
+.skills-section {
+    background: #CDC69A; 
+    border-radius: 50px;
+    width: 80%;
+    padding: 2em;
+}
+
+.hobbies-section {
+    background: #FFFDEF; 
+    border-radius: 25px;
+    width: 85%;
+    padding: 2em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.destinations-section {
+    background: #DCDCDC;
+    border-radius: 15px;
+    padding: 2em;
+    width: 80%;
+}
+
+.foods-section {
+    background: #FFFDEF;
+    border-radius: 30px;
+    padding: 2em;
+    width: 85%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.media-section {
+    background: #F5F5F5;
+    border-radius: 20px;
+    padding: 2em;
+    width: 90%;
+    margin: 2em auto;
+}
+
+.family-section {
+    background: #CDC69A; 
+    border-radius: 15px;
+    padding: 2em;
+    width: 75%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.education-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    background: #FFFDEF;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 1em);
+}
+
+.school-logo {
+    width: 80px;
+    height: auto;
+    margin-right: 1em;
+}
+
+.education-details h3 {
+    margin: 0;
+    color: #100E11;
+}
+
+.education-details p {
+    margin: 0;
+    color: #666;
+}
+
+.media-category {
+    margin-bottom: 2em;
+}
+
+.media-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.media-cover {
+    max-width: 120px;
+    border-radius: 5px;
+    margin-right: 1em;
+}
+
+.link-button {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background: #290102;
+    color: #FFFDEF;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+    font-weight: bold;
+    font-family: 'Didot', serif; 
+}
+
+
+.link-button:hover {
+    background: #A7292F;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    padding: 0.75em 1.5em;
+    background: #290102;
+    color: #FFFDEF; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    font-family: 'Didot', serif;
+}
+
+.scroll-to-top:hover {
+    background: #A7292F;
+}
+
+.scroll-to-top:active {
+    transform: scale(0.95);
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 0.75em 1.5em;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropbtn:hover {
+    background-color: #555;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 900px;
+    max-width: 600px; 
+    height: 300px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px;
+    padding: 1em;
+    text-align: left;
+    overflow-y: auto;
+}
+
+.dropdown-content .media-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5em; 
+}
+
+.dropdown-content .media-cover {
+    max-width: 200px;
+    margin-right: 1em;
+}
+
+.dropdown-content .media-item p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.family-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.family-section th, .family-section td {
+    border: 1px solid #ddd;
+    padding: 0.75em;
+    text-align: left;
+}
+
+.family-section th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.family-section tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.family-section tr:hover {
+    background-color: #f1f1f1;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Didot', serif;
+  }
+  
+  form label {
+    font-family: 'Didot', serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="date"],
+  form input[type="time"],
+  form input[type="text"],
+  form input[type="color"],
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Didot', serif;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+  }
+  
+  form input[type="checkbox"] {
+    margin-left: 10px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #FFFDEF;
+    color: #290102;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Didot', serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color:#CDC69A ;
+  }
+  
+  form hr {
+    border: none;
+    border-top: 2px solid #dee2e6;
+    margin: 20px 0;
+  }
+  
+  form textarea {
+    height: 100px;
+    resize: vertical;
+  }
+
+  form input[type="color"] {
+    width: 50px;
+    padding: 5px;
+  }
+  
+  form select {
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+
+  form label[for="free-busy"] {
+    font-weight: bold;
+  }
+  
+  form input[type="checkbox"] {
+    margin-left: 5px;
+    transform: scale(1.2);
+  }
+
+  @media screen and (max-width: 768px) {
+    form {
+      padding: 15px;
+    }
+    
+    form label, form input[type="submit"] {
+      font-size: 14px;
+      color: #A7292F;
+    }
+  }
+  
