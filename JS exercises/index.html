@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Exercises</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="star.png" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <h1>Java Exercises</h1>
+    </header>
+
+    <section id="clock">
+        <h2>Clock</h2>
+        <canvas id="canvas" width="400" height="400" style="background-color:#333"></canvas>
+    </section>
+
+    <section id="primes">
+        <h2>Prime Factors</h2>
+        <input type="text" id="prime-input" placeholder="Enter a number">
+        <button onclick="getPrimeFactors()">Get Prime Factors</button>
+        <p>Prime Factors: <span id="pf"></span></p>
+    </section>
+
+    <section id="piglatin">
+        <h2>Pig Latin</h2>
+        <input type="text" id="txtVal" placeholder="Enter a word">
+        <button onclick="convertToPigLatin()">Get Pig Latin Translation</button>
+        <p>Result: <span id="pigLatLbl"></span></p>
+    </section>
+
+    <section id="next-prime">
+        <h2>Next Prime</h2>
+        <input type="text" id="next-prime-input" placeholder="Enter a number">
+        <button onclick="checkNextPrime()">Get Next Prime</button>
+        <p>Next Prime: <span id="next-prime-result"></span></p>
+    </section>
+
+    <section id="fibonacci">
+        <h2>Fibonacci</h2>
+        <input type="text" id="fibonacci-input" placeholder="Enter Fibonacci position">
+        <button onclick="calculateFibonacci()">Calculate</button>
+        <p>Result: <span id="fibonacciLbl"></span></p>
+    </section>
+
+    <script src="js/clock.js"></script>
+    <script src="js/prime.js"></script>
+    <script src="js/piglatin.js"></script>
+    <script src="js/nextPrime.js"></script>
+    <script src="js/fibonacci.js"></script>
+</body>
+</html>

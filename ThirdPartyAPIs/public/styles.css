@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #ff6b6b;
+    --secondary-color: #4ecdc4;
+    --background-color: #f7f7f9;
+    --text-color: #333;
+    --section-bg: #fff;
+    --input-bg: #f0f0f5;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 15px;
+    background-color: var(--section-bg);
+    box-shadow: 0 8px 15px var(--shadow-color);
+    width: 350px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    text-shadow: 1px 1px 5px var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1::before {
+    content: "🌤️ ";
+    font-size: 2.2rem;
+    margin-right: 0.5rem;
+}
+
+input[type="text"] {
+    width: calc(100% - 1rem);
+    padding: 0.9rem;
+    margin: 0.5rem 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: var(--input-bg);
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+input[type="text"]::placeholder {
+    color: #888;
+    font-size: 1.2rem;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+button::before {
+    content: "✨ ";
+    font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}

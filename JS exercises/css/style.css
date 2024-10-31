@@ -1,0 +1,154 @@
+:root {
+    --primary-color: #ff6b6b;
+    --secondary-color: #4ecdc4;
+    --background-color: #f7f7f9;
+    --text-color: #333;
+    --section-bg: #fff;
+    --input-bg: #f0f0f5;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px var(--shadow-color);
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    background-color: var(--section-bg);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 20px var(--shadow-color);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    text-align: center;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px var(--shadow-color);
+}
+
+section h2 {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 5px var(--primary-color);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: var(--input-bg);
+    color: var(--primary-color);
+    font-size: 1em;
+}
+
+input[type="text"]::placeholder {
+    color: #888;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+button::before {
+    content: "✨ ";
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: var(--text-color);
+}
+
+p span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+#canvas {
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 20px auto;
+    background-color: #333;
+}
+
+#primes h2::before,
+#piglatin h2::before,
+#next-prime h2::before,
+#fibonacci h2::before,
+#clock h2::before {
+    content: "💡 ";
+}
+
+#primes p::before {
+    content: "🔢 ";
+}
+
+#piglatin p::before {
+    content: "📝 ";
+}
+
+#next-prime p::before {
+    content: "🔍 ";
+}
+
+#fibonacci p::before {
+    content: "🔢 ";
+}
+
+@media (max-width: 600px) {
+    section {
+        width: 100%;
+    }
+}

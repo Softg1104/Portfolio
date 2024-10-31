@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.nav-link {
+  color: #f7f7f9 !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #4ecdc4 !important;
+  text-decoration: underline;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+  border: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #ff8383, #4ee1d6);
+  transform: scale(1.05);
+}
+
+.mode-toggle {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mode-toggle:hover {
+  background-color: #ff8383;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="search"] {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+  transition: border-color 0.3s ease;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="search"]::placeholder {
+  color: #bbb;
+}
+
+input:focus {
+  border-color: #4ecdc4;
+  outline: none;
+}
+
+.pagination .page-link {
+  color: #ff6b6b;
+  transition: background-color 0.2s;
+}
+
+.pagination .page-link:hover {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+.footer {
+  background-color: #333;
+  color: #ddd;
+  border-top: 1px solid #444;
+}
+
+.footer .text-muted {
+  color: #aaa;
+}
+
+body.light-mode {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.navbar.light-mode {
+  background-color: #f8f9fa;
+}
+
+.footer.light-mode {
+  background-color: #f8f9fa;
+}
+
+body.dark-mode {
+  background-color: #181818;
+  color: #f0f0f0;
+}
+
+.navbar.dark-mode {
+  background-color: #333;
+}
+
+.footer.dark-mode {
+  background-color: #1f1f1f;
+}

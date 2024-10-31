@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/style.css">
+
+<h1><%= post.title %></h1>
+<p><%= post.content %></p>
+
+<h2>Edit Post</h2>
+<form action="/post/<%= post.id %>/edit" method="POST">
+  <textarea name="content"><%= post.content %></textarea>
+  <button type="submit">Save</button>
+</form>
+
+<form action="/post/<%= post.id %>/delete" method="POST">
+  <button type="submit">Delete</button>
+</form>
+<%- include('partials/footer') %>

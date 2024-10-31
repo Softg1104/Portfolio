@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Express Test</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/express-api-exercise/public/wazzaaa.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Express Test</h1>
+
+        <div class="section">
+            <h2>Register & Greet</h2>
+            <% if (error) { %>
+                <p style="color: red; text-align: center;"><%= error %></p>
+            <% } %>
+            <form action="/greet" method="get">
+                <input type="text" name="name" placeholder="Enter your name">
+                <input type="submit" value="Greet">
+            </form>
+
+            <ul>
+                <% names.forEach((name) => { %>
+                    <li><a href="/greet/<%= name %>">👋 <%= name %></a></li>
+                <% }) %>
+            </ul>
+        </div>
+
+        <!-- TODO List Section -->
+        <div class="section">
+            <h2>TODO List</h2>
+            <ul>
+                <% tasks.forEach((task, index) => { %>
+                    <li>
+                        <%= task %> 
+                        <form action="/task/<%= index %>?_method=DELETE" method="POST" style="display:inline;">
+                            <button type="submit">🗑️ Delete</button>
+                        </form>
+                    </li>
+                <% }) %>
+            </ul>
+
+            <form action="/task" method="post">
+                <input type="text" name="task" placeholder="New Task">
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+
+        <div class="footer">
+            <p>Made with ❤️</p>
+        </div>
+    </div>
+</body>
+</html>
